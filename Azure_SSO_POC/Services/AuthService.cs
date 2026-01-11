@@ -20,7 +20,7 @@ public class AuthService
     {
         _app = PublicClientApplicationBuilder.Create(ClientId)
             .WithAuthority($"{Instance}{TenantId}")
-            .WithRedirectUri("http://localhost") // Must match Azure Portal
+            .WithRedirectUri("http://localhost:5374") // Must match Azure Portal
             .Build();
     }
 
